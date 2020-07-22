@@ -1,0 +1,481 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.cover-photo {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+
+@media screen and (min-width: 750px) {
+  .cover-photo {
+    height: 500px;
+  }
+}
+
+.movie-info-container {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin-top: 15px;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+}
+
+@media screen and (min-width: 750px) {
+  .movie-info-container {
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 80%;
+    align-self: flex-start;
+    align-items: center;
+  }
+}
+
+.film-page-poster {
+  height: 200px;
+}
+
+@media screen and (min-width: 750px) {
+  .film-page-poster {
+    height: 300px;
+  }
+}
+
+.movie-info-container-right {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year-and-original-language {
+  display: flex;
+  align-items: baseline;
+  width: 90%;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 750px) {
+  .year-and-original-language {
+    width: 80%;
+  }
+}
+
+h2 {
+  margin: 0;
+}
+
+.year {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 750px) {
+  .year {
+    font-size: 18px;
+  }
+}
+
+.director {
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 750px) {
+  .director {
+    font-size: 18px;
+  }
+}
+
+.original-language {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.lady-original {
+  position: relative;
+  left: 5px;
+}
+
+.chinese {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.korean {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.trailer-button {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  width: 85%;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  font-family: "Assistant", sans-serif;
+}
+
+.rate-review-like-button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  width: 85%;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  font-family: "Assistant", sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+  .rate-review-like-button {
+    display: none;
+  }
+}
+
+.right-info-container-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .right-info-container-left {
+    margin-left: 20px;
+    width: 40%;
+  }
+}
+
+.film-plot {
+  width: 90%;
+  margin-top: 10px;
+  position: relative;
+  bottom: 100px;
+}
+
+.plot-headline {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.film-plot-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .film-plot-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-right: 10px;
+  }
+  .film-plot {
+    display: none;
+  }
+}
+
+h4 {
+  margin: 0;
+}
+
+.cast-details-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 100px;
+}
+
+@media screen and (min-width: 750px) {
+  .cast-details-container {
+    width: 85%;
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.cast-tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: #f6d4ef;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.details-headers {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.rate-review-like-section {
+  /* height: 500px; */
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+  margin-bottom: 20px;
+}
+
+.like-buttons-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .rate-review-like-section {
+    display: none;
+  }
+  .like-buttons-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+}
+
+.logged-like-watchlist-icons {
+  height: 50px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .logged-like-watchlist-icons {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.logged-like-watchlist-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.rating-stars {
+  margin-top: 25px;
+}
+
+.edit-buttons {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .edit-buttons {
+    width: 200px;
+  }
+}
+
+.block-buttons {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.star-icon {
+  height: 40px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.happy-together-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/happy-together-cover-photo.jpg");
+}
+
+.cheerleader-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/cheerleader-cover.jpg");
+  background-position: center;
+}
+
+.moonlight-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/moonlight-cover.jpg");
+  background-position: center;
+}
+
+.idaho-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/idaho-cover.jpg");
+  background-position: center;
+}
+
+.shakedown-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/shakedown-cover.jpg");
+  background-position: center;
+}
+
+.tangerine-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/tangerine-cover.jpg");
+  background-position: center;
+}
+
+.totally-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/totally-cover.jpg");
+}
+
+.watermelon-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/watermelon-cover.png");
+  /* background-position: center; */
+}
+
+.portrait-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/portrait-cover.jpg");
+  background-position: center;
+}
+
+.stateless-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/stateless-cover.jpg");
+  /* background-position: center; */
+}
+
+.mishima-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/mishima-cover.jpg");
+  background-position: center;
+}
+
+.hunger-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/hunger-cover.jpg");
+  background-position: center;
+}
+
+.spa-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/spa-cover.jpg");
+  /* background-position: center; */
+}
+
+.fox-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/fox-cover.jpg");
+  background-position: center;
+}
+
+.normal-heart-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/normal-heart-cover.jpg");
+  background-position: center;
+}
+
+.harvey-cover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(252, 252, 252, 0.75)
+    ),
+    url("../img/harvey-cover.jpg");
+  background-position: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pink {
+  background-color: #f6d4ef;
+}
